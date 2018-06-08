@@ -17,9 +17,10 @@ Of course, you can still use our good old but still excellent Excel  to create y
 
 Just a script to collect events from various sources, including the Crimson Events Channel if you know the name of these, just paste it using -EventLogName property
 
+![Fig1](/Screenshots/GetEventsFromEventLogs-script.png)
+
 ## Events collection Graphical User Interface (GUI)
 
 Using Powershell and WPF, I made a GUI to launch the events collection so that the options are easier to view before launching the collection, and you don't have to think about how to spell this or that property, and you see immediately which properties you can use with it...
 
-
-
+![Fig2](/Screenshots/GetEventsFromEventLogs-GUI.png)

@@ -1,0 +1,81 @@
+"MachineName","LogName","TimeCreated","LevelDisplayName","ProviderName","Id","Message"
+"IZNOGOUD","Application","1/15/2019 1:37:21 PM","Information","Microsoft-Windows-RestartManager","10001","Ending session 10 started ?2019?-?01?-?15T18:37:21.120840000Z."
+"IZNOGOUD","Application","1/15/2019 1:37:21 PM","Information","Microsoft-Windows-RestartManager","10000","Starting session 10 - ?2019?-?01?-?15T18:37:21.120840000Z."
+"IZNOGOUD","System","1/15/2019 1:31:46 PM","Information","Service Control Manager","7040","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start."
+"IZNOGOUD","System","1/15/2019 1:26:40 PM","Information","Service Control Manager","7040","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start."
+"IZNOGOUD","Application","1/15/2019 12:58:16 PM","Information","ESENT","326","Video.UI (11948,D,50) {DD2DE901-5DF5-4192-82A5-F1166B4A6EE7}: The database engine attached a database (1, C:\Users\SammyKrosoft\AppData\Local\Packages\Microsoft.ZuneVideo_8wekyb3d8bbwe\LocalState\Database\194e8d034589e5e8\EntClientDb.edb). (Time=0 seconds) #
+ #
+Saved Cache: 0 0 #
+Additional Data: lgposAttach = 00000002:002A:0268 #
+ #
+Internal Timing Sequence: 
+[1] 0.000005 +J(0)
+[2] 0.001116 -0.000001 (1) WT +J(0) +M(C:0K, Fs:21, WS:20K # 0K, PF:8K # 0K, P:8K)
+[3] 0.006942 -0.000872 (6) WT +J(CM:0, PgRf:0, Rd:0/0, Dy:0/0, Lg:3480/2) +M(C:0K, Fs:62, WS:232K # 0K, PF:56K # 0K, P:56K)
+[4] 0.000565 +J(0) +M(C:0K, Fs:5, WS:20K # 0K, PF:4K # 0K, P:4K)
+[5] -
+[6] -
+[7] -
+[8] 0.001002 -0.000577 (2) CM +J(CM:2, PgRf:2, Rd:14/2, Dy:0/0, Lg:0/0) +M(C:0K, Fs:16, WS:56K # 0K, PF:140K # 0K, P:140K)
+[9] 0.004587 -0.000597 (5) CM -0.003630 (1) WT +J(CM:5, PgRf:23, Rd:0/5, Dy:0/0, Lg:0/0) +M(C:0K, Fs:96, WS:372K # 0K, PF:404K # 0K, P:404K)
+[10] 0.000180 -0.000006 (1) CM +J(CM:1, PgRf:40, Rd:0/1, Dy:0/0, Lg:0/0) +M(C:0K, Fs:4, WS:8K # 0K, PF:64K # 0K, P:64K)
+[11] 0.000015 +J(CM:0, PgRf:1, Rd:0/0, Dy:0/0, Lg:0/0) +M(C:0K, Fs:2, WS:8K # 0K, PF:0K # 0K, P:0K)
+[12] 0.000050 +J(CM:0, PgRf:42, Rd:0/0, Dy:0/0, Lg:0/0) +M(C:0K, Fs:3, WS:12K # 0K, PF:4K # 0K, P:4K)
+[13] 0.000001 +J(0)
+[14] 0.000001 +J(0)
+[15] 0.000007 +J(CM:0, PgRf:1, Rd:0/0, Dy:0/0, Lg:0/0)."
+"IZNOGOUD","Application","1/15/2019 12:58:16 PM","Information","ESENT","105","Video.UI (11948,D,0) {DD2DE901-5DF5-4192-82A5-F1166B4A6EE7}: The database engine started a new instance (0). (Time=0 seconds) #
+ #
+Additional Data:#
+ lgposV2[] = 00000002:0025:0000 - 00000002:0027:002B - 00000002:0028:0000 - 00000002:0028:0000 (00000000:0000:0000)
+cReInits = 10
+ #
+ #
+Internal Timing Sequence: 
+[1] 0.005732 +J(0) +M(C:0K, Fs:212, WS:808K # 808K, PF:2452K # 2524K, P:2452K)
+[2] 0.000517 +J(0) +M(C:0K, Fs:104, WS:416K # 416K, PF:312K # 240K, P:312K)
+[3] 0.000028 +J(0) +M(C:0K, Fs:3, WS:8K # 8K, PF:68K # 68K, P:68K)
+[4] 0.000188 +J(0) +M(C:0K, Fs:32, WS:128K # 128K, PF:184K # 184K, P:184K)
+[5] 0.002339 +J(0) +M(C:0K, Fs:35, WS:140K # 140K, PF:24K # 24K, P:24K)
+[6] 0.003612 +J(0) +M(C:0K, Fs:128, WS:500K # 500K, PF:96K # 96K, P:96K)
+[7] 0.011613 -0.000072 (9) WT +J(0) +M(C:0K, Fs:605, WS:2196K # 2196K, PF:2020K # 2020K, P:2020K)
+[8] 0.121013 -0.003006 (26) WT +J(CM:0, PgRf:0, Rd:0/0, Dy:0/0, Lg:158184/97) +M(C:0K, Fs:1281, WS:2016K # 2020K, PF:856K # 864K, P:856K)
+[9] 0.002210 +J(0) +M(C:0K, Fs:26, WS:104K # 100K, PF:24K # 16K, P:24K)
+[10] 0.004078 -0.000011 (8) WT +J(0) +M(C:0K, Fs:42, WS:-1876K # 92K, PF:-2024K # 20K, P:-2024K)
+[11] 0.000032 +J(CM:0, PgRf:0, Rd:0/0, Dy:0/0, Lg:49/1) +M(C:0K, Fs:1, WS:4K # 0K, PF:0K # 0K, P:0K)
+[12] 0.003234 -0.003173 (2) WT +J(0) +M(C:0K, Fs:16, WS:64K # 0K, PF:0K # 0K, P:0K)
+[13] 0.024532 -0.000502 (2) CM -0.008054 (28) WT +J(CM:2, PgRf:2, Rd:0/2, Dy:0/0, Lg:8759/5) +M(C:0K, Fs:774, WS:712K # 788K, PF:-80K # 0K, P:-80K)
+[14] 0.000023 +J(0)
+[15] 0.000022 +J(0)
+[16] 0.000593 -0.000001 (1) WT +J(0) +M(C:0K, Fs:5, WS:8K # 0K, PF:0K # 0K, P:0K)."
+"IZNOGOUD","Application","1/15/2019 12:58:16 PM","Information","ESENT","302","Video.UI (11948,U,98) {DD2DE901-5DF5-4192-82A5-F1166B4A6EE7}: The database engine has successfully completed recovery steps."
+"IZNOGOUD","Application","1/15/2019 12:58:16 PM","Information","ESENT","301","Video.UI (11948,R,98) {DD2DE901-5DF5-4192-82A5-F1166B4A6EE7}: The database engine has finished replaying logfile C:\Users\SammyKrosoft\AppData\Local\Packages\Microsoft.ZuneVideo_8wekyb3d8bbwe\LocalState\Database\194e8d034589e5e8\edb.log. #
+ #
+Processing Stats: 
+[1] 0.032737 -0.002999 (23) WT +J(CM:0, PgRf:0, Rd:0/0, Dy:0/0, Lg:158184/97) +M(C:0K, Fs:1175, WS:1608K # 1612K, PF:532K # 540K, P:532K). #
+Log record of type 'FWriteLog' was seen most frequently (11 times)"
+"IZNOGOUD","Application","1/15/2019 12:58:16 PM","Information","ESENT","300","Video.UI (11948,R,98) {DD2DE901-5DF5-4192-82A5-F1166B4A6EE7}: The database engine is initiating recovery steps."
+"IZNOGOUD","Application","1/15/2019 12:58:16 PM","Information","ESENT","102","Video.UI (11948,P,98) {DD2DE901-5DF5-4192-82A5-F1166B4A6EE7}: The database engine (10.00.17763.0000) is starting a new instance (0)."
+"IZNOGOUD","System","1/15/2019 12:37:37 PM","Information","Microsoft-Windows-WindowsUpdateClient","19","Installation Successful: Windows successfully installed the following update: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.283.3022.0)"
+"IZNOGOUD","Application","1/15/2019 12:37:34 PM","Information","SecurityCenter","15","Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON."
+"IZNOGOUD","Application","1/15/2019 12:37:34 PM","Information","SecurityCenter","15","Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON."
+"IZNOGOUD","System","1/15/2019 12:37:23 PM","Information","Microsoft-Windows-WindowsUpdateClient","43","Installation Started: Windows has started installing the following update: Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.283.3022.0)"
+"IZNOGOUD","System","1/15/2019 12:37:23 PM","Information","Microsoft-Windows-WindowsUpdateClient","44","Windows Update started downloading an update."
+"IZNOGOUD","System","1/15/2019 12:33:03 PM","Warning","HidBth","2","Bluetooth HID device  either went out of range or became unresponsive."
+"IZNOGOUD","Application","1/15/2019 12:32:52 PM","Information","Outlook","63","The Exchange web service request GetAppManifests succeeded. "
+"IZNOGOUD","System","1/15/2019 12:27:23 PM","Information","Service Control Manager","7040","The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start."
+"IZNOGOUD","System","1/15/2019 12:25:14 PM","Information","Service Control Manager","7040","The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start."
+"IZNOGOUD","System","1/15/2019 12:00:00 PM","Information","EventLog","6013","The system uptime is 445160 seconds."
+"IZNOGOUD","Application","1/15/2019 11:55:14 AM","Information","VSS","8224","The VSS service is shutting down due to idle timeout. "
+"IZNOGOUD","System","1/15/2019 11:52:33 AM","Information","Service Control Manager","7040","The start type of the Windows Modules Installer service was changed from auto start to demand start."
+"IZNOGOUD","System","1/15/2019 11:51:17 AM","Information","Microsoft-Windows-WindowsUpdateClient","44","Windows Update started downloading an update."
+"IZNOGOUD","System","1/15/2019 11:51:06 AM","Information","Service Control Manager","7040","The start type of the Windows Modules Installer service was changed from demand start to auto start."
+"IZNOGOUD","System","1/15/2019 11:45:16 AM","Warning","Microsoft-Windows-DNS-Client","1014","Name resolution for the name api.onedrive.com timed out after none of the configured DNS servers responded."
+"IZNOGOUD","System","1/15/2019 11:31:01 AM","Information","Microsoft-Windows-Kernel-General","16","The access history in hive \??\C:\Users\SammyKrosoft\AppData\Local\Packages\microsoft.zunevideo_8wekyb3d8bbwe\Settings\settings.dat was cleared updating 16 keys and creating 2 modified pages."
+"IZNOGOUD","System","1/15/2019 11:31:01 AM","Information","Microsoft-Windows-Kernel-General","16","The access history in hive \??\C:\Users\SammyKrosoft\AppData\Local\Packages\microsoft.windowscalculator_8wekyb3d8bbwe\Settings\settings.dat was cleared updating 4 keys and creating 1 modified pages."
+"IZNOGOUD","System","1/15/2019 11:30:47 AM","Information","Microsoft-Windows-Kernel-General","1","The system time has changed to ?2019?-?01?-?15T16:30:47.701023900Z from ?2019?-?01?-?15T16:30:47.700751900Z.#
+#
+Change Reason: An application or system component changed the time.#
+Process: '\Device\HarddiskVolume4\Windows\System32\svchost.exe' (PID 4968)."
+"IZNOGOUD","System","1/15/2019 11:30:47 AM","Information","Microsoft-Windows-Time-Service","35","The time service is now synchronizing the system time with the time source time.windows.com,0x9 (ntp.m|0x9|0.0.0.0:123->52.168.138.145:123) with reference id 2441783348. Current local stratum number is 3."
+"IZNOGOUD","Application","1/15/2019 11:30:45 AM","Error","Microsoft-Windows-Spell-Checking","31","Failed to update Excluded Words user custom wordlist: The process cannot access the file because it is being used by another process.. Spell checking will remain available, but this user wordlist will not be updated."

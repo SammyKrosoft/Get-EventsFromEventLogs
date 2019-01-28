@@ -178,8 +178,11 @@ $DebugPreference = "Continue"
 # Set Error Action to your needs
 $ErrorActionPreference = "SilentlyContinue"
 #Script Version
-$ScriptVersion = "1.4.4.1"
+$ScriptVersion = "1.5"
 <# Version changes :
+v1.5 -> fixed output of events : now outputs only the 10 last ones instead of all the events
+Changed infos dumped using $DebugScript
+Added info to use -ExportToFile to export to a file (otherwise will just show 10 last on screen) 
 v1.4.4.1 -> update for the GUI version Get-Events function - added out-string to dump events on host
 Write-Host ($Events | Select -first $NumberOfLastEventsToGet | ft -a | out-string)
 v1.4.4 -> corrected examples
@@ -314,16 +317,20 @@ If (!(IsEmpty $EventLevel)){
 
 #Just adding a debug hard coded switch to check my filter...
 if ($DebugScript){
+    Write-Host "Here's the Filter Hash Properties:"
     $FilterHashProperties
     $Computer = "127.0.0.1"
-    $Events = Get-WinEvent -FilterHashtable $FilterHashProperties -MaxEvents $NumberOfLastEventsToGet -Computer $Computer -ErrorAction stop | select MachineName, LogName, TimeCreated, LevelDisplayName, ProviderName, ID, Message
+    Write-Host "`nAbout tu run:"
+    $CommandLine = "Get-WinEvent -FilterHashtable $FilterHashProperties -MaxEvents $NumberOfLastEventsToGet -Computer $Computer -ErrorAction stop | select MachineName, LogName, TimeCreated, LevelDisplayName, ProviderName, ID, Message"
+    $CommandLine
+          $Events = Get-WinEvent -FilterHashtable $FilterHashProperties -MaxEvents $NumberOfLastEventsToGet -Computer $Computer -ErrorAction stop | select MachineName, LogName, TimeCreated, LevelDisplayName, ProviderName, ID, Message
     Foreach ($Event in $Events) {
         If ($Event.Message -ne $null){
             $Event.Message = $Event.Message.Replace("`r","#")
         }
     }
-    Write-host "Found at least $($Events.count) events ! Here are the $NumberOfLastEventsToGet last ones :"
-    Write-Host ($Events | Select -first $NumberOfLastEventsToGet | ft -a | out-string)
+    Write-host "You asked for $NumberOfLastEvents events to get, and we found $($Events.count) events ! Here are the last 10 as an overview :"
+    Write-Host ($Events | Select -first 10 | ft -a | out-string)
     exit
 }
 
@@ -342,8 +349,8 @@ Foreach ($computer in $computers)
                     $Event.Message = $Event.Message.Replace("`r","#")
                 }
             }
-            Write-host "Found at least $($Events.count) events ! Here are the $NumberOfLastEventsToGet last ones :"
-            Write-Host ($Events | Select -first $NumberOfLastEventsToGet | ft -a | out-string)
+            Write-host "You asked for $NumberOfLastEvents events to get, and we found $($Events.count) events ! Here are the last 10 as an overview :"
+            Write-Host ($Events | Select -first 10 | ft -a | out-string)
             $Events4All += $Events
         }
         Catch
@@ -393,6 +400,8 @@ If ($ExportToFile){
     }
     $Events4all | Export-Csv -NoTypeInformation $EventsReport
     notepad $EventsReport
+} Else {
+    Write-Host "Didn't specify to export the events into a file ... use -ExportToFile parameter switch to export results to a file." -BackgroundColor Yellow -ForegroundColor Red
 }
 <# /EXECUTIONS #>
 <# ---------------------------- SCRIPT_FOOTER ---------------------------- #>

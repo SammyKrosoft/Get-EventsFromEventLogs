@@ -246,7 +246,7 @@ Function IsPSV3 {
 <# -------------------------- EXECUTIONS -------------------------- #>
 cls
 Write-Host "Starting script..."
-Write-Host "Script v.$ScriptVersion" -BackgroundColor yellow -ForegroundColor Blue
+Write-Host "Script v.$ScriptVersion" -BackgroundColor green -ForegroundColor Red
 #$Computers = Get-ExchangeServer
 #$Computers = "Server-01", "Server-02", "Server-03", "Server-04"
 #$COmputers = Get-Content C:\temp\MyServersList.txt

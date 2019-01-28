@@ -183,6 +183,7 @@ $ScriptVersion = "1.5"
 v1.5 -> fixed output of events : now outputs only the 10 last ones instead of all the events
 Changed infos dumped using $DebugScript
 Added info to use -ExportToFile to export to a file (otherwise will just show 10 last on screen) 
+Added Script version display
 v1.4.4.1 -> update for the GUI version Get-Events function - added out-string to dump events on host
 Write-Host ($Events | Select -first $NumberOfLastEventsToGet | ft -a | out-string)
 v1.4.4 -> corrected examples
@@ -243,9 +244,9 @@ Function IsPSV3 {
 }
 <# /FUNCTIONS #>
 <# -------------------------- EXECUTIONS -------------------------- #>
-#cls
+cls
 Write-Host "Starting script..."
-
+Write-Host "Script v.$ScriptVersion" -BackgroundColor yellow -ForegroundColor Blue
 #$Computers = Get-ExchangeServer
 #$Computers = "Server-01", "Server-02", "Server-03", "Server-04"
 #$COmputers = Get-Content C:\temp\MyServersList.txt
@@ -253,9 +254,8 @@ Write-Host "Starting script..."
 
 
 while ($Answer -ne "Y" -AND $Answer -ne "N") {
-    cls
     If (IsEmpty $EventSource -and IsEmpty $EventID -and IsEmpty $EventLevel){
-    Write-host "No Event ID, Event Source or Event Level specified, we will search for all the last $NumberOfLastEventsToGet events on each machine`nor the local machine if you didn't specify the -Computers parameter" -BackgroundColor yellow -ForegroundColor blue
+        Write-host "No Event ID, Event Source or Event Level specified, we will search for all the last $NumberOfLastEventsToGet events on each machine`nor the local machine if you didn't specify the -Computers parameter" -BackgroundColor yellow -ForegroundColor blue
     }
     Write-Host "Event log names         :   $($EventLogName -join ", ")"
     Write-Host "Computers               :   $($Computers -join ", ")"

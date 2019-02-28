@@ -683,8 +683,10 @@ $wpf.btnGetList.add_Click({
     #Updating form while loading event logs list...
     Status-Working "Please wait while getting Event Logs list..."
 
-    #Action !
-    $EventLogsList = Get-WinEvent -ListLog * -ErrorAction SilentlyContinue | Select LogName
+    # Action !
+    # $EventLogsList = @()
+    $EventLogsList = Get-WinEvent -ListLog * -ErrorAction SilentlyContinue | ForEAch {$_.LogName}
+    # $EventLogsList = $EventLogsList | Foreach {$_.LogName}
     $wpf.lstEventLogs.ItemsSource = $EventLogsList
 
     #Updating form when loading event logs list is done...

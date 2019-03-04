@@ -782,6 +782,12 @@ $wpf.chkSaveToFile.add_Click({
 # End of Clicked on Checkboxes events
 #endregion
 
+#region Event Log types selection
+
+
+#endregion
+#End of region for event log type selection
+
 #=======================================================
 #End of Events from the WPF form
 #endregion

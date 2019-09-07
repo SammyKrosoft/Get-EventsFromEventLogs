@@ -21,7 +21,7 @@
     or any number), and spit the events list on the screen.
     
     By default, if no computers are specified, the script will search on the local
-    computer.
+    computer...
 
 .PARAMETER Computers
     By default, the script will search for events in the local computer (defined as 127.0.0.1).

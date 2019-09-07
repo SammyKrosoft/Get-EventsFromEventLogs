@@ -164,7 +164,7 @@ MachineName     LogName         TimeCreated             LevelDisplayName    Id  
     https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent
 
 .LINK
-    https://github.com/SammyKrosoft
+    https://github.com/SammyKrosoft/Get-EventsFromEventLogs
 
 #>
 [CmdLetBinding(DefaultParameterSetName = "NormalRun")]

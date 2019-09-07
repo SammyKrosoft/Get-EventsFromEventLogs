@@ -1,4 +1,16 @@
-﻿<#
+﻿<#PSScriptInfo
+ 
+.VERSION 1.5.1
+
+.GUID 1d916d77-0277-4d08-bbb0-1ba8c9d01d54
+ 
+.AUTHOR SammyKrosoft
+ 
+.COMPANYNAME SammykroSoft
+ 
+#>
+
+<#
 .NOTES
 With the help of            :   Jim Moyle @jimmoyle
 How-To GUI From Jim Moyle   :   https://github.com/JimMoyle/GUIDemo

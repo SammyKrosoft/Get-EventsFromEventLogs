@@ -1,3 +1,15 @@
+<#PSScriptInfo
+ 
+.VERSION 1.5.1
+ 
+.GUID 1d916d77-0277-4d08-bbb0-1ba8c9d01d54
+ 
+.AUTHOR SammyKrosoft
+ 
+.COMPANYNAME SammykroSoft
+ 
+#>
+
 <#
 .SYNOPSIS
     Searches and Get specific events from any computer, local or remote, or from a computer list.
@@ -178,8 +190,9 @@ $DebugPreference = "Continue"
 # Set Error Action to your needs
 $ErrorActionPreference = "SilentlyContinue"
 #Script Version
-$ScriptVersion = "1.5"
+$ScriptVersion = "1.5.1"
 <# Version changes :
+v1.5.1 -> added PSGallery PSScriptInfo for publishing
 v1.5 -> fixed output of events : now outputs only the 10 last ones instead of all the events
 Changed infos dumped using $DebugScript
 Added info to use -ExportToFile to export to a file (otherwise will just show 10 last on screen) 

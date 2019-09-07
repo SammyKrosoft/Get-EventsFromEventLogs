@@ -11,6 +11,12 @@
 #>
 
 <#
+
+.DESCRIPTION
+This script is a graphical user interface for the Get-EventsFromEventLogs.ps1 script that
+you can find on my GitHub page https://github.com/SammyKrosoft. See the description in the 
+Get-EventsFromEventLogs function below.
+
 .NOTES
 With the help of            :   Jim Moyle @jimmoyle
 How-To GUI From Jim Moyle   :   https://github.com/JimMoyle/GUIDemo

@@ -1,6 +1,6 @@
 <#PSScriptInfo
  
-.VERSION 1.5.1
+.VERSION 1.6
 
 .GUID 1d916d77-0277-4d08-bbb0-1ba8c9d01d54
  
@@ -67,7 +67,7 @@
 
 .PARAMETER ExportToFile
     This is a SWITCH that, if specified, will store the results in a CSV file.
-    This file will be placed on the directory where the script is located, and named :
+    This file will be placed on the executing user's Documents folder (My Document), and named :
         "GetEventsFromEventLogs_EventID1-EventID2-XXXXX_Year-MONTH-DAY-Hour-Minute-Second.csv"
     Example:
         "GetEventsFromEventLogs_916-105_2018-04-13-09-52-08.csv"
@@ -190,8 +190,9 @@ $DebugPreference = "Continue"
 # Set Error Action to your needs
 $ErrorActionPreference = "SilentlyContinue"
 #Script Version
-$ScriptVersion = "1.5.1"
+$ScriptVersion = "1.6"
 <# Version changes :
+v1.6 -> store the Events results file into the executing user's MyDocument folder instead of the script's directory
 v1.5.1 -> added PSGallery PSScriptInfo for publishing
 v1.5 -> fixed output of events : now outputs only the 10 last ones instead of all the events
 Changed infos dumped using $DebugScript
@@ -388,27 +389,15 @@ Write-host ($Events4All | Group-Object LevelDisplayName | ft @{Label="Event Leve
 If ($ExportToFile){
     If (!(IsEmpty $EventID)){
         $FileEventLogFirstID = "GetEventsFromEventLogs_$($EventID[0])_$(get-date -f yyyy-MM-dd-hh-mm-ss).csv"
-        If (IsPSV3){
-            $EventsReport = "$PSScriptRoot\$FileEventLogFirstID"
-        } Else {
-            $EventsReport = "$(split-path -parent $MyInvocation.MyCommand.Definition)\$FileEventLogFirstID"
-        }
+            $EventsReport = "$($env:Documents)\$FileEventLogFirstID" # changed from $PSScriptRoot in 1.6
     } Else { 
         If (!(IsEmpty $EventSource)){
             $FileEventLogFirstSource = "GetEventsFromEventLogs_$($EventSource[0])_$(get-date -f yyyy-MM-dd-hh-mm-ss).csv"
-            If (IsPSV3){
-                $EventsReport = "$PSScriptRoot\$FileEventLogFirstSource"
-            } Else {
-                $EventsReport = "$(split-path -parent $MyInvocation.MyCommand.Definition)\$FileEventLogFirstSource"
-            }
+                $EventsReport = "$($env:Documents)\$FileEventLogFirstSource" # changed from $PSScriptRoot in 1.6
             
         } Else {
             $FileNumberOfLastEvents = "GetEventsFromEventLogs_Last_$($NumberOfLastEventsToGet)_$(get-date -f yyyy-MM-dd-hh-mm-ss).csv"
-            If(IsPSV3){
-                $EventsReport = "$PSScriptRoot\$FileNumberOfLastEvents"
-            } else {
-                $EventsReport = "$(split-path -parent $MyInvocation.MyCommand.Definition)\$FileNumberOfLastEvents"
-            }
+                $EventsReport = "$($env:Documents)\$FileNumberOfLastEvents" # changed from $PSScriptRoot in 1.6
         }
     }
     $Events4all | Export-Csv -NoTypeInformation $EventsReport

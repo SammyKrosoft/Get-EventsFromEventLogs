@@ -1,6 +1,6 @@
 <#PSScriptInfo
  
-.VERSION 1.6.1
+.VERSION 1.6.2
 
 .GUID 1d916d77-0277-4d08-bbb0-1ba8c9d01d54
  
@@ -190,8 +190,9 @@ $DebugPreference = "Continue"
 # Set Error Action to your needs
 $ErrorActionPreference = "SilentlyContinue"
 #Script Version
-$ScriptVersion = "1.6.1"
+$ScriptVersion = "1.6.2"
 <# Version changes :
+v1.6.2 -> changed name file generation from 3 lines (If / If / Else) to 1 ($EventsReport variable)
 v1.6.1 -> mistake in $env:documents -> $env:userprofile\documents
 v1.6 -> store the Events results file into the executing user's MyDocument folder instead of the script's directory
 v1.5.1 -> added PSGallery PSScriptInfo for publishing
@@ -390,17 +391,15 @@ Write-host ($Events4All | Group-Object LevelDisplayName | ft @{Label="Event Leve
 If ($ExportToFile){
     If (!(IsEmpty $EventID)){
         $FileEventLogFirstID = "GetEventsFromEventLogs_$($EventID[0])_$(get-date -f yyyy-MM-dd-hh-mm-ss).csv"
-            $EventsReport = "$($env:userprofile)\documents\$FileEventLogFirstID" # changed from $PSScriptRoot in 1.6
     } Else { 
         If (!(IsEmpty $EventSource)){
             $FileEventLogFirstSource = "GetEventsFromEventLogs_$($EventSource[0])_$(get-date -f yyyy-MM-dd-hh-mm-ss).csv"
-                $EventsReport = "$($env:userprofile)\documents\$FileEventLogFirstSource" # changed from $PSScriptRoot in 1.6
             
         } Else {
             $FileNumberOfLastEvents = "GetEventsFromEventLogs_Last_$($NumberOfLastEventsToGet)_$(get-date -f yyyy-MM-dd-hh-mm-ss).csv"
-                $EventsReport = "$($env:userprofile)\documents\$FileNumberOfLastEvents" # changed from $PSScriptRoot in 1.6
         }
     }
+    $EventsReport = "$($env:userprofile)\documents\$FileEventLogFirstID" # changed from $PSScriptRoot in 1.6
     $Events4all | Export-Csv -NoTypeInformation $EventsReport
     notepad $EventsReport
 } Else {

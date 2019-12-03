@@ -1,6 +1,6 @@
 <#PSScriptInfo
  
-.VERSION 1.6.2
+.VERSION 1.7.0
 
 .GUID 1d916d77-0277-4d08-bbb0-1ba8c9d01d54
  
@@ -178,7 +178,9 @@ Param(
     [Parameter(Mandatory = $False, Position = 7, ParameterSetName = "NormalRun")] [Switch]$ExportToFile,
     [Parameter(Mandatory = $False, Position = 8, ParameterSetName = "NormalRun")] [Boolean]$Confirm = $true,
     [Parameter(Mandatory = $False, Position = 9, ParameterSetName = "NormalRun")] [switch]$DebugScript,
-    [Parameter(Mandatory = $false, Position = 10, ParameterSetName = "CheckVersionOnly")][Switch]$CheckVersion
+    [Parameter(Mandatory = $False, Position = 10, ParameterSetName = "NormalRun")] [string]$StartDate,
+    [Parameter(Mandatory = $False, Position = 11, ParameterSetName = "NormalRun")] [string]$EndDate,
+    [Parameter(Mandatory = $false, Position = 12, ParameterSetName = "CheckVersionOnly")][Switch]$CheckVersion
 )
 
 <# ------- SCRIPT_HEADER (Only Get-Help comments and Param() above this point) ------- #>
@@ -190,8 +192,10 @@ $DebugPreference = "Continue"
 # Set Error Action to your needs
 $ErrorActionPreference = "SilentlyContinue"
 #Script Version
-$ScriptVersion = "1.6.2"
+$ScriptVersion = "1.7.0"
 <# Version changes :
+v1.7.0 -> added filtering on -StartDate and -EndDate (all dates if nothing specified. To do: exclude -NumberOfLastEventsToGet from 
+parameters set when using StartDate and EndDate...
 v1.6.2 -> changed name file generation from 3 lines (If / If / Else) to 1 ($EventsReport variable)
 v1.6.1 -> mistake in $env:documents -> $env:userprofile\documents
 v1.6 -> store the Events results file into the executing user's MyDocument folder instead of the script's directory
@@ -315,6 +319,20 @@ If (!(IsEmpty $EventSource)){
 
 If (!(IsEmpty $EventID)){
     $FilterHashProperties.Add("ID",$EventID)
+}
+
+
+# DEfining date template
+$template = "MM/dd/yyyy HH:mm"
+
+If (!(IsEmpty $StartDate)){
+    $StartDate = [datetime]::ParseExact($StartDate,$template,$null)
+    $FilterHashProperties.Add("StartTime",$StartDate)
+}
+
+If (!(IsEmpty $EndDate)){
+    $EndDate = [datetime]::ParseExact($EndDate,$template,$null)
+    $FilterHashProperties.Add("EndTime",$EndDate)
 }
 
 If (!(IsEmpty $EventLevel)){

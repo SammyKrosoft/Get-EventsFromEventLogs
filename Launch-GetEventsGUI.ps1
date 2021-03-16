@@ -1,6 +1,6 @@
 ﻿<#PSScriptInfo
  
-.VERSION 1.5.1
+.VERSION 1.6
 
 .GUID 08eee800-b250-4366-82b9-8bc6862466fe
  
@@ -24,6 +24,7 @@ How-To GUI From Jim Moyle   :   https://github.com/JimMoyle/GUIDemo
 #>
 $global:GUIversion = "2"
 <# Release notes
+v1.6 -> added ability to search for application logs - removed ValidationSet for EventLogName
 v1.2 -> changed way to call ShowDialog() to avoid crashes
 v1.1.1 -> fixed lack of IsPSV3 function ...
 #>

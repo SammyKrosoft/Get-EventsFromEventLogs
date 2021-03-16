@@ -214,7 +214,7 @@ Function Get-EventsFromEventLogs {
     [CmdLetBinding(DefaultParameterSetName = "NormalRun")]
     Param(
         [Parameter(Mandatory = $False, Position = 1, ParameterSetName = "NormalRun")] $Computers = ("127.0.0.1"),
-        [Parameter(Mandatory = $False, Position = 2, ParameterSetName = "NormalRun")][ValidateSet("Application","System","Security")] [array]$EventLogName = ('Application', 'System'),
+        [Parameter(Mandatory = $False, Position = 2, ParameterSetName = "NormalRun")] [array]$EventLogName = ('Application', 'System'),
         [Parameter(Mandatory = $False, Position = 3, ParameterSetName = "NormalRun")] [array]$EventID="All",
         [Parameter(Mandatory = $False, Position = 4, ParameterSetName = "NormalRun")] [array]$EventSource="All",
         [Parameter(Mandatory = $False, Position = 5, ParameterSetName = "NormalRun")][ValidateSet("All","Information","Warning","Error","Critical", "Verbose")] [array]$EventLevel="All",
@@ -544,6 +544,18 @@ Function Update-cmd{
         $Command += (" -EventLogName ") + $LogsToSearch
     }
 
+    If (($wpf.lstEventLogs.SelectedItems).count -gt 0){
+        [string[]]$EventLevelToSearch = @()
+        $CollectionSelectedItems = @()
+        $LogsToSearch = @()
+        $CollectionSelectedItems = $wpf.lstEventLogs.SelectedItems
+        Foreach ($item in $CollectionSelectedItems){
+            $LogsToSearch += """$Item"""
+        }
+        $LogsToSearch = $LogsToSearch -join ","
+        $Command += (" -EventLogName ") + $LogsToSearch
+    }
+
     If ($($wpf.chkLevelInformation.IsChecked) -or $($wpf.chkLevelWarning.IsChecked) -or $($wpf.chkLevelError.IsChecked) -or $($wpf.chkLevelCritical.IsChecked)){
         [string[]]$EventLevelToSearch = @()
         If ($wpf.chkLevelInformation.IsChecked){$EventLevelToSearch += "Information"}
@@ -772,7 +784,6 @@ $wpf.txtEventSources.add_TextChanged({
     Update-cmd
 })
 
-
 #End of Text Changed events
 #endregion
 
@@ -798,7 +809,14 @@ $wpf.chkSaveToFile.add_Click({
     Update-cmd
 })
 # End of Clicked on Checkboxes events
-#endregion
+#endregion clicked on checkboxes events
+
+#region Clicked on List table events
+$wpf.lstEventLogs.add_SelectionChanged({
+    Update-cmd
+})
+
+#endregion clicked on list table events
 
 #region Event Log types selection
 

@@ -1,6 +1,6 @@
 <#PSScriptInfo
  
-.VERSION 1.6
+.VERSION 1.7
 
 .GUID 08eee800-b250-4366-82b9-8bc6862466fe
  
@@ -22,8 +22,9 @@ With the help of            :   Jim Moyle @jimmoyle
 How-To GUI From Jim Moyle   :   https://github.com/JimMoyle/GUIDemo
 
 #>
-$global:GUIversion = "2"
+$global:GUIversion = "2.1"
 <# Release notes
+v1.7 (GUI v2.1) -> published in GitHub
 v1.6 -> added ability to search for application logs - removed ValidationSet for EventLogName
 v1.2 -> changed way to call ShowDialog() to avoid crashes
 v1.1.1 -> fixed lack of IsPSV3 function ...
@@ -357,7 +358,7 @@ Function Get-EventsFromEventLogs {
 
     If (!(IsEmpty $EventLevel)){
         for ($i=0;$i -lt $($EventLevel.count);$i++){
-            $EventLevel[$i] = switch ($EventLevel[$i]) {6
+            $EventLevel[$i] = switch ($EventLevel[$i]) {
                 "LogAlways" {0}
                 "Critical" {1}
                 "Error" {2}

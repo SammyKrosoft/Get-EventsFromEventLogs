@@ -1,4 +1,4 @@
-﻿<#PSScriptInfo
+<#PSScriptInfo
  
 .VERSION 1.6
 
@@ -357,7 +357,7 @@ Function Get-EventsFromEventLogs {
 
     If (!(IsEmpty $EventLevel)){
         for ($i=0;$i -lt $($EventLevel.count);$i++){
-            $EventLevel[$i] = switch ($EventLevel[$i]) {
+            $EventLevel[$i] = switch ($EventLevel[$i]) {6
                 "LogAlways" {0}
                 "Critical" {1}
                 "Error" {2}

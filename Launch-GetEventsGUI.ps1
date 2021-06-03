@@ -22,8 +22,9 @@ With the help of            :   Jim Moyle @jimmoyle
 How-To GUI From Jim Moyle   :   https://github.com/JimMoyle/GUIDemo
 
 #>
-$global:GUIversion = "2.1"
+$global:GUIversion = "3"
 <# Release notes
+v1.8 (GUI v3) -> added "Unselect All" button under event logs ListBox + widened event logs listbox for readability
 v1.7 (GUI v2.1) -> published in GitHub
 v1.6 -> added ability to search for application logs - removed ValidationSet for EventLogName
 v1.2 -> changed way to call ShowDialog() to avoid crashes

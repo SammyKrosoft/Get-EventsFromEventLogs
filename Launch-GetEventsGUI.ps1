@@ -614,7 +614,7 @@ $inputXML = @"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="SearchAndCollect" Height="573.903" Width="829.49" ShowActivated="False" Background="#FFA19C9C">
+        Title="SearchAndCollect" Height="668.927" Width="829.49" ShowActivated="False" Background="#FFA19C9C">
     <Grid Margin="0,0,0,0" Background="Teal">
         <TextBox x:Name="txtCSVComputersList" HorizontalAlignment="Left" Height="147" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228"/>
         <Label Content="Computers List (Comma Separated)" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="202"/>
@@ -624,10 +624,10 @@ $inputXML = @"
         <CheckBox x:Name="chkLevelCritical" Content="Critical" HorizontalAlignment="Left" Margin="586,80,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNumberOfEvents" HorizontalAlignment="Left" Height="20" Margin="139,204,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="99"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,193,0,0" TextWrapping="Wrap" Text="Events to collect per computer" VerticalAlignment="Top" Width="124"/>
-        <TextBox x:Name="txtCommand" HorizontalAlignment="Left" Height="75" Margin="10,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="775" IsReadOnly="True"/>
-        <Label Content="Function Command Line we'll launch" HorizontalAlignment="Left" Margin="10,323,0,0" VerticalAlignment="Top" Width="240"/>
-        <Button x:Name="btnRun" Content="Run" HorizontalAlignment="Left" Height="30" Margin="10,434,0,0" VerticalAlignment="Top" Width="162" Cursor="Hand"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="471,434,0,0" VerticalAlignment="Top" Width="160" Height="30" Cursor="Hand"/>
+        <TextBox x:Name="txtCommand" HorizontalAlignment="Left" Height="99" Margin="26,462,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="775" IsReadOnly="True"/>
+        <Label Content="Function Command Line we'll launch" HorizontalAlignment="Left" Margin="26,431,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button x:Name="btnRun" Content="Run" HorizontalAlignment="Left" Height="30" Margin="26,566,0,0" VerticalAlignment="Top" Width="162" Cursor="Hand"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="641,568,0,0" VerticalAlignment="Top" Width="160" Height="30" Cursor="Hand"/>
         <CheckBox x:Name="chkSpeech" Content="Speech" HorizontalAlignment="Left" Margin="681,28,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="lstBoxLanguage" HorizontalAlignment="Left" Height="47" Margin="681,48,0,0" VerticalAlignment="Top" Width="70" IsSynchronizedWithCurrentItem="False" IsEnabled="False" SelectedIndex="1">
             <ListBoxItem Content="Francais"/>
@@ -635,18 +635,21 @@ $inputXML = @"
         </ListBox>
         <TextBox x:Name="txtEventIDs" HorizontalAlignment="Left" Height="57" Margin="615,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
         <TextBox x:Name="txtEventSources" HorizontalAlignment="Left" Height="97" Margin="615,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
-        <CheckBox x:Name="chkSaveToFile" Content="Save events to file" HorizontalAlignment="Left" Margin="177,442,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkSaveToFile" Content="Save events to file" HorizontalAlignment="Left" Margin="193,574,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblGUIVer" Content="GUI version" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Background="#FFC1B621"/>
         <Label x:Name="lblFUNCVer" Content="Event collector function version" HorizontalAlignment="Left" Margin="10,268,0,0" VerticalAlignment="Top" Background="#FF66D71F"/>
         <ListBox x:Name="lstEventLogs" HorizontalAlignment="Left" Height="304" Margin="252,10,0,0" VerticalAlignment="Top" Width="320" SelectionMode="Multiple"/>
-        <Button x:Name="btnGetList" Content="Get Event Log List" HorizontalAlignment="Left" Margin="252,319,0,0" VerticalAlignment="Top" Width="146" Cursor="Hand"/>
-        <TextBlock x:Name="txtStatus" HorizontalAlignment="Center" Margin="10,506,22,0" TextWrapping="Wrap" Text="Ready !" VerticalAlignment="Top" Width="763" Height="30" Background="#FF969292" FontSize="20" IsEnabled="False"/>
+        <Button x:Name="btnGetList" Content="Get Event Log List" HorizontalAlignment="Left" Margin="252,371,0,0" VerticalAlignment="Top" Width="146" Cursor="Hand"/>
+        <TextBlock x:Name="txtStatus" HorizontalAlignment="Center" Margin="10,603,10,0" TextWrapping="Wrap" Text="Ready !" VerticalAlignment="Top" Width="805" Height="30" Background="#FF969292" FontSize="20" IsEnabled="False"/>
         <TextBlock HorizontalAlignment="Left" Margin="615,205,0,0" TextWrapping="Wrap" Text="Event Sources to look for (comma separated)" VerticalAlignment="Top" Width="143"/>
         <TextBlock HorizontalAlignment="Left" Margin="615,106,0,0" TextWrapping="Wrap" Text="Event IDs to look for (comma separated)" VerticalAlignment="Top" Width="143"/>
         <Button x:Name="btnUnselect" Content="Unselect All" HorizontalAlignment="Left" Margin="497,319,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtEventLogNameFilter" HorizontalAlignment="Left" Height="23" Margin="252,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.206,0.945"/>
+        <TextBlock HorizontalAlignment="Left" Margin="252,322,0,0" TextWrapping="Wrap" Text="Event log substring name" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
+
 
 "@
 $inputXMLClean = $inputXML -replace 'mc:Ignorable="d"','' -replace "x:N",'N' -replace 'x:Class=".*?"','' -replace 'd:DesignHeight="\d*?"','' -replace 'd:DesignWidth="\d*?"',''
@@ -720,7 +723,12 @@ $wpf.btnGetList.add_Click({
 
     # Action !
     # $EventLogsList = @()
-    $EventLogsList = Get-WinEvent -ListLog * -ErrorAction SilentlyContinue | ForEAch {$_.LogName}
+    if ([string]::IsNullOrEmpty($wpf.txtEventLogNameFilter.Text)){
+        [array]$EventLogsList = Get-WinEvent -ListLog * -ErrorAction SilentlyContinue | ForEAch {$_.LogName}
+    } Else {
+        $EventLogNameFilter = $wpf.txtEventLogNameFilter.Text
+        [array]$EventLogsList = Get-WinEvent -ListLog "*$($EventLogNameFilter)*" -ErrorAction SilentlyContinue | ForEAch {$_.LogName}
+    }
     # $EventLogsList = $EventLogsList | Foreach {$_.LogName}
     $wpf.lstEventLogs.ItemsSource = $EventLogsList
     $wpf.lstEventLogs.UnselectAll()

@@ -2,7 +2,7 @@
 
 Right-click the below link, then "Save link as" to save the latest Launch-GetEventsGUI.ps1 script:
 
-[Download latest version of Launch-GetEventsGUI.ps1 - this branch direct raw link](https://raw.githubusercontent.com/SammyKrosoft/Get-EventsFromEventLogs/master/Launch-GetEventsGUI.ps1)
+> [Download latest version of Launch-GetEventsGUI.ps1 - this branch direct raw link](https://raw.githubusercontent.com/SammyKrosoft/Get-EventsFromEventLogs/master/Launch-GetEventsGUI.ps1)
 
 This repository contains both a script to collect event logs, and a GUI that wraps around the script to make it more visual to understand and set the desired options for the collection of events (such as the number of events to collect per machine, which event log to collect from, etc...).
 

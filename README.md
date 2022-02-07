@@ -47,6 +47,17 @@ And the last tab for finer analysis (even research):
 
 ![image](https://user-images.githubusercontent.com/33433229/152837419-cc56cc14-8d8f-400e-97c7-2e89b9ef50b4.png)
 
+### Template v1.3
+
+Here I made the first page cleaner than v1.2.x, and changed the orientation of some visuals as it's more readable if you have lots of servers in your CSV:
+
+![image](https://user-images.githubusercontent.com/33433229/152838523-b4a38e64-c7c2-48a6-87e7-be5ab3ee4034.png)
+
+And the last tab for finer analysis is the same as v1.2.1
+
+![image](https://user-images.githubusercontent.com/33433229/152838799-781fbee3-4933-4618-a0e2-0a8069f7c985.png)
+
+### Template v1.4
 
 
 

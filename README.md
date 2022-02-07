@@ -59,5 +59,19 @@ And the last tab for finer analysis is the same as v1.2.1
 
 ### Template v1.4
 
+Introducing a major evolution of the above templates bymy awesome, exceptionnal and passionate **Matthys Shoeman** ! :hugs:
 
+![image](https://user-images.githubusercontent.com/33433229/152840511-16de2c74-907f-4702-896a-cf143ea04cf7.png)
+
+there's more:
+
+![image](https://user-images.githubusercontent.com/33433229/152840988-461564b9-8218-495e-9218-cd4164342095.png)
+
+And finally a nice events dashboard:
+
+![image](https://user-images.githubusercontent.com/33433229/152841088-e5f26478-2557-4175-8e34-b6ac4959a9cf.png)
+
+### Template v1.6
+
+Coming soon...
 

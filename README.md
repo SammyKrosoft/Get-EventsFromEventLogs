@@ -71,7 +71,7 @@ And finally a nice events dashboard:
 
 ![image](https://user-images.githubusercontent.com/33433229/152841088-e5f26478-2557-4175-8e34-b6ac4959a9cf.png)
 
-### Template v1.6
+### Template v1.5
 
 Coming soon...
 

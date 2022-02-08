@@ -1,0 +1,114 @@
+"MachineName","LogName","TimeCreated","LevelDisplayName","ProviderName","Id","Message"
+"Matthyss-P1","M365DSC","2022/01/07 07:57:39","Error","MSFT_O365Group","1","A positional parameter cannot be found that accepts argument 'True'."
+"Matthyss-P1","M365DSC","2022/01/07 07:23:48","Error","MSFT_O365Group","1","A positional parameter cannot be found that accepts argument 'True'."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:30","Error","MSFT_EXOTransportRule","1","The term 'Get-TransportRule' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:28","Error","MSFT_EXOSharingPolicy","1","The term 'Get-SharingPolicy' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:26","Error","MSFT_EXOSharedMailbox","1","The term 'Get-Mailbox' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:17","Error","MSFT_EXORoleAssignmentPolicy","1","The term 'Get-RoleAssignmentPolicy' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:14","Error","MSFT_EXORemoteDomain","1","The term 'Get-RemoteDomain' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:10","Error","MSFT_EXOPartnerApplication","1","The term 'Get-PartnerApplication' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:08","Error","MSFT_EXOOwaMailboxPolicy","1","The term 'Get-OwaMailboxPolicy' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:05","Error","MSFT_EXOOutboundConnector","1","The term 'Get-OutboundConnector' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:03","Error","MSFT_EXOOrganizationRelationship","1","The term 'Get-OrganizationRelationship' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:41:01","Error","MSFT_EXOOrganizationConfig","1","The term 'Get-OrganizationConfig' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:40:57","Error","MSFT_EXOOnPremisesOrganization","1","The term 'Get-OnPremisesOrganization' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:40:52","Error","MSFT_EXOMobileDeviceMailboxPolicy","1","The term 'Get-MobileDeviceMailboxPolicy' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:40:51","Error","MSFT_EXOManagementRole","1","The term 'Get-ManagementRole' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:40:48","Error","MSFT_EXOMalwareFilterRule","1","The term 'Get-MalwareFilterRule' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:40:46","Error","MSFT_EXOMalwareFilterPolicy","1","The term 'Get-MalwareFilterPolicy' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 03:40:43","Error","MSFT_EXOMailTips","1","The term 'Get-OrganizationConfig' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+"Matthyss-P1","M365DSC","2022/01/07 01:00:03","Error","MSFT_EXOTransportRule","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:02","Error","MSFT_EXOSharingPolicy","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:02","Error","MSFT_EXOSharedMailbox","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:02","Error","MSFT_EXOSafeLinksRule","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:02","Error","MSFT_EXOSafeLinksPolicy","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:02","Error","MSFT_EXOSafeAttachmentRule","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:02","Error","MSFT_EXOSafeAttachmentPolicy","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:02","Error","MSFT_EXORoleAssignmentPolicy","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:02","Error","MSFT_EXORemoteDomain","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:01","Error","MSFT_EXOPolicyTipConfig","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:01","Error","MSFT_EXOPartnerApplication","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:01","Error","MSFT_EXOOwaMailboxPolicy","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:01","Error","MSFT_EXOOutboundConnector","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:01","Error","MSFT_EXOOrganizationRelationship","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:00","Error","MSFT_EXOOrganizationConfig","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 01:00:00","Error","MSFT_EXOOnPremisesOrganization","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 00:59:59","Error","MSFT_EXOMobileDeviceMailboxPolicy","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 00:59:59","Error","MSFT_EXOManagementRole","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 00:59:59","Error","MSFT_EXOMalwareFilterRule","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 00:59:59","Error","MSFT_EXOMalwareFilterPolicy","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/07 00:59:58","Error","MSFT_EXOMailTips","1","Exception calling ""GetSteppablePipeline"" with ""1"" argument(s): ""One or more errors occurred."""
+"Matthyss-P1","M365DSC","2022/01/06 19:38:36","Error","MSFT_IntuneDeviceConfigurationPolicyWindows10","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: ef97a937-4574-4b8a-8b6a-59262f6fb408 - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceConfigurations?api-version=2020-02-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:38:34","Error","MSFT_IntuneDeviceConfigurationPolicyiOS","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: 56a229b6-02ad-4163-9f6d-693d28a80ab5 - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceConfigurations?api-version=2020-02-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:38:30","Error","MSFT_IntuneDeviceConfigurationPolicyAndroidWorkProfile","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: 3b6821b8-5fe9-4b7a-95f8-f76995f3bdbb - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceConfigurations?api-version=5021-10-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:38:24","Error","MSFT_IntuneDeviceCompliancePolicyWindows10","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: 75024462-7f56-4727-8b06-86166dcccfee - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceCompliancePolicies?api-version=2020-02-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:38:22","Error","MSFT_IntuneDeviceCompliancePolicyMacOS","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: 172f78ac-6374-4acf-8515-d25cab04f2c4 - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceCompliancePolicies?api-version=2020-02-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:38:19","Error","MSFT_IntuneDeviceCompliancePolicyiOs","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: ce43bf8c-7314-4501-b427-ae8410e10549 - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceCompliancePolicies?api-version=2020-02-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:38:17","Error","MSFT_IntuneDeviceCompliancePolicyAndroidWorkProfile","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: ce0db4df-74dd-4fe0-b0e6-2d530eb84826 - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceCompliancePolicies?api-version=2020-02-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:38:13","Error","MSFT_IntuneDeviceCompliancePolicyAndroidDeviceOwner","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: 40717153-8635-4adf-b9b1-f84a461dc4bf - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceCompliancePolicies?api-version=5021-10-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:38:06","Error","MSFT_IntuneDeviceCompliancePolicyAndroid","1","{#
+  ""_version"": 3,#
+  ""Message"": ""Application is not authorized to perform this operation. Application must have one of the following scopes: DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All - Operation ID (for customer support): 00000000-0000-0000-0000-000000000000 - Activity ID: 5d0074f9-5ad6-47c0-962c-8eef97ad06e2 - Url: https://fef.amsub0202.manage.microsoft.com/DeviceConfiguration_2112/StatelessDeviceConfigurationFEService/deviceManagement/deviceCompliancePolicies?api-version=2020-02-21"",#
+  ""CustomApiErrorPhrase"": """",#
+  ""RetryAfter"": null,#
+  ""ErrorSourceService"": """",#
+  ""HttpHeaders"": ""{}""#
+}"
+"Matthyss-P1","M365DSC","2022/01/06 19:37:52","Error","MSFT_IntuneAppProtectionPolicyiOS","1","A positional parameter cannot be found that accepts argument 'Method'."
+"Matthyss-P1","M365DSC","2022/01/06 19:37:48","Error","MSFT_IntuneAppProtectionPolicyiOS","1","A positional parameter cannot be found that accepts argument 'Method'."

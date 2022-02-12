@@ -59,7 +59,7 @@ And the last tab for finer analysis is the same as v1.2.1
 
 ### Template v1.4
 
-Introducing a major evolution of the above templates bymy awesome, exceptionnal and passionate **Matthys Shoeman** ! :hugs:
+Introducing a major evolution of the above templates by my awesome, exceptionnal and passionate colleague **Matthys Shoeman** ! :hugs:
 
 ![image](https://user-images.githubusercontent.com/33433229/152840511-16de2c74-907f-4702-896a-cf143ea04cf7.png)
 

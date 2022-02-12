@@ -73,5 +73,12 @@ And finally a nice events dashboard:
 
 ### Template v1.5
 
-Coming soon...
+Again, by **Matthys Shoeman**, an evolution of the previous template:
+
+![image](https://user-images.githubusercontent.com/33433229/153720055-1afb2de6-9290-46d6-b925-2d9ff0fd8640.png)
+
+And:
+
+![image](https://user-images.githubusercontent.com/33433229/153720070-474d3be7-f473-4211-b464-a8a68859ea26.png)
+
 

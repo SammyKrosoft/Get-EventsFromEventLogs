@@ -1,6 +1,6 @@
 <#PSScriptInfo
  
-.VERSION 1.7
+.VERSION 1.9
 
 .GUID 08eee800-b250-4366-82b9-8bc6862466fe
  
@@ -22,8 +22,9 @@ With the help of            :   Jim Moyle @jimmoyle
 How-To GUI From Jim Moyle   :   https://github.com/JimMoyle/GUIDemo
 
 #>
-$global:GUIversion = "3"
+$global:GUIversion = "3.1"
 <# Release notes
+v1.9 (GUI v3.1) -> just added -ComputerName with first computer in list when getting list of crimson logs
 v1.8 (GUI v3) -> added "Unselect All" button under event logs ListBox + widened event logs listbox for readability
 v1.7 (GUI v2.1) -> published in GitHub
 v1.6 -> added ability to search for application logs - removed ValidationSet for EventLogName
@@ -723,11 +724,16 @@ $wpf.btnGetList.add_Click({
 
     # Action !
     # $EventLogsList = @()
+    #BOOKMARK
+    
+    $FirstComputerInList = ($wpf.txtCSVComputersList.Text -split ",")[0]
+
+    
     if ([string]::IsNullOrEmpty($wpf.txtEventLogNameFilter.Text)){
-        [array]$EventLogsList = Get-WinEvent -ListLog * -ErrorAction SilentlyContinue | ForEAch {$_.LogName}
+        [array]$EventLogsList = Get-WinEvent -ComputerName $FirstComputerInList -ListLog * -ErrorAction SilentlyContinue | ForEAch {$_.LogName}
     } Else {
         $EventLogNameFilter = $wpf.txtEventLogNameFilter.Text
-        [array]$EventLogsList = Get-WinEvent -ListLog "*$($EventLogNameFilter)*" -ErrorAction SilentlyContinue | ForEAch {$_.LogName}
+        [array]$EventLogsList = Get-WinEvent -ComputerName $FirstComputerInList -ListLog "*$($EventLogNameFilter)*" -ErrorAction SilentlyContinue | ForEAch {$_.LogName}
     }
     # $EventLogsList = $EventLogsList | Foreach {$_.LogName}
     $wpf.lstEventLogs.ItemsSource = $EventLogsList
